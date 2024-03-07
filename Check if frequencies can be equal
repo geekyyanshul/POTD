@@ -1,3 +1,12 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+
+// } Driver Code Ends
+//User function template for C++
+class Solution{
+public:	
 bool sameFreq(string s)
     {
         vector<int> vec1,vec2;
@@ -42,6 +51,23 @@ bool sameFreq(string s)
         {
             return false;
         }
-       
-        
     }
+        
+    };
+
+//{ Driver Code Starts.
+int main(){
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s;
+        cin>>s;
+        Solution ob;
+        cout<<ob.sameFreq(s)<<endl;
+    }
+}
+
+
+
+// } Driver Code Ends
