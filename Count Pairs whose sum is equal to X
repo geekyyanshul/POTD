@@ -1,0 +1,17 @@
+ HashSet<Integer> set = new HashSet<>();
+
+        // Traverse the second list and store its elements in a set
+        for (Integer value : head2) {
+            set.add(value);
+        }
+
+        int count = 0;
+
+        // Traverse the first list and for each element, check if its complement exists in the set
+        for (Integer value : head1) {
+            if (set.contains(x - value)) {
+                count++;
+            }
+        }
+
+        return count;
