@@ -1,0 +1,35 @@
+#User function Template for python3
+class Solution:
+	def NBitBinary(self, n):
+		# code here
+        res = []
+		def recursive(s, i, j) :   # s: str,i : no. of one, j : no. of zero
+		    if len(s) == n:
+		        res.append(s)
+		        return
+	        else:
+	            if i>j:
+	                recursive(s+ "1", i+1, j)
+	                recursive(s + "0", i, j+1)
+	            elif i == j:
+	                recursive(s + "1", i+1, j)
+	            return
+	    recursive("", 0, 0)
+	    return res
+
+#{ 
+ # Driver Code Starts
+#Initial Template for Python 3
+
+if __name__ == '__main__':
+	T=int(input())
+	for i in range(T):
+		n = int(input())
+		ob = Solution()	
+		answer = ob.NBitBinary(n)
+		for value in answer:
+			print(value,end=" ")
+		print()
+
+
+# } Driver Code Ends
