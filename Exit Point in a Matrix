@@ -1,0 +1,53 @@
+//{ Driver Code Starts
+#include <bits/stdc++.h>
+using namespace std;
+
+
+// } Driver Code Ends
+class Solution {
+  public:
+    vector<int> FindExitPoint(int n, int m, vector<vector<int>>& matrix) {
+       int i = 0, j = 0, curr = 0, curr_i = 0, curr_j = 0;
+	int directions[4][2] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+	
+	while(i < matrix.size() && j < matrix[0].size()) {
+	    curr_i = i;
+	    curr_j = j;
+	    if(matrix[i][j] == 0) {
+	        i += directions[curr][0];
+	        j += directions[curr][1];
+	    }
+	    else {
+	        matrix[i][j] = 0;
+	        if(curr == 3)
+	            curr = 0;
+	        else
+	            curr++;
+	        i += directions[curr][0];
+	        j += directions[curr][1];
+	    }
+	}
+	return {curr_i, curr_j};
+    }
+};
+
+//{ Driver Code Starts.
+int main() {
+    int tc;
+    cin >> tc;
+    while (tc--) {
+        int n, m;
+        cin >> n >> m;
+        vector<vector<int>> matrix(n, vector<int>(m, 0));
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < m; j++)
+                cin >> matrix[i][j];
+        Solution obj;
+        vector<int> ans = obj.FindExitPoint(n, m, matrix);
+        for (auto i : ans)
+            cout << i << " ";
+        cout << "\n";
+    }
+    return 0;
+}
+// } Driver Code Ends
