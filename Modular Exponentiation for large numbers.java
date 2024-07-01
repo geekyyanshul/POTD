@@ -41,3 +41,11 @@ class Solution
         return (x*PowMod(x,n-1,m))%m;
     }
 }
+  
+
+
+
+
+
+
+
