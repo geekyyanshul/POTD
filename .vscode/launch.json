@@ -5,6 +5,13 @@
       "type": "java",
       "name": "helloworld",
       "request": "launch",
+      "mainClass": "August2024.helloworld",
+      "projectName": "POTD_36f065c6"
+    },
+    {
+      "type": "java",
+      "name": "helloworld",
+      "request": "launch",
       "mainClass": "July.helloworld",
       "projectName": "POTD_36f065c6"
     },
