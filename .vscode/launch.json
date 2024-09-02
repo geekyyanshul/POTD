@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hellosept",
+      "request": "launch",
+      "mainClass": "September2024.hellosept",
+      "projectName": "POTD_36f065c6"
+    },
+    {
+      "type": "java",
       "name": "helloworld",
       "request": "launch",
       "mainClass": "August2024.helloworld",
