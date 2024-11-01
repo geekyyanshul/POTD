@@ -1,4 +1,7 @@
 package November2024;
+     
+
+//AN hello world program that takes the user's name as input and prints "Hello, <name>!".
 
 import java.util.Scanner;
 
