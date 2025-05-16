@@ -8,7 +8,7 @@ class GFG {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine().trim());
         while (T-- > 0) {
-            String s1 = br.readLine();
+            String s1 = br.readLine();   
             String[] S = s1.split(" ");
             String s = S[0];
             String t = S[1];
