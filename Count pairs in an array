@@ -6,7 +6,7 @@ using namespace std;
 
 
 class Solution{
-    public:
+    public:   
     int merge(int arr[],int low,int mid,int high){
    int temp[high-low+1];
    int k=0;
