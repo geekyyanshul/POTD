@@ -14,7 +14,7 @@ class Solution{
         }
         
     }
-};
+};   
 
 int main() {
 	
