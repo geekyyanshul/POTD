@@ -32,7 +32,7 @@ int main() {
 	        cin >> arr[i];
 	    }
         Solution obj;
-       
+        
 	    obj.swapElements(arr, n);
 	  
 	    for(int i = 0;i<n;i++){
