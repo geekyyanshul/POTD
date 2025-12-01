@@ -9,7 +9,7 @@ class Solution {
         this.m = mat[0].length;
         dp = new Integer[n][m][k + 1];
         return dfs(0, 0, k);
-    }
+    }   
 
     private int dfs(int i, int j, int coins) {
         // Out of bounds
