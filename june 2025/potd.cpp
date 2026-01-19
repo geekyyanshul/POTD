@@ -2,7 +2,7 @@
 class Node {
   public:
     int data;
-    Node *left;
+    Node *left;   
     Node *right;
 
     Node(int x) {
