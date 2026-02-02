@@ -4,7 +4,7 @@ class Solution {
     Integer[][][] dp;
 
     public int numberOfPath(int[][] mat, int k) {
-        this.mat = mat;
+        this.mat = mat;  
         this.n = mat.length;
         this.m = mat[0].length;
         dp = new Integer[n][m][k + 1];
