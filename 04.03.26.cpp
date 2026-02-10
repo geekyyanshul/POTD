@@ -8,7 +8,7 @@ class Solution{
           
          for(int i=2;i<n;i++)
         {
-            int temp=arr[i];
+            int temp=arr[i]; 
             arr[i]=arr[i-2];
             arr[i-2]=temp;
         }
