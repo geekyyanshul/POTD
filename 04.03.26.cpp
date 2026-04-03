@@ -12,7 +12,7 @@ class Solution{
             arr[i]=arr[i-2];
             arr[i-2]=temp;
         }      
-        
+          
     }
 };   
 
